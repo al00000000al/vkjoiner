@@ -10,8 +10,9 @@ composer require vkcom/vk-php-sdk
 
 А да. еще надо добавить в vendor\vkcom\vk-php-sdk\src\VK\Actions
 
-Следущий код:
+Следущий код: 
+~~~~ 
 	public function joinChatByInviteLink(string $access_token, array $params = array()) {
         return $this->request->post('messages.joinChatByInviteLink', $access_token, $params);
     }
-
+~~~~ 
